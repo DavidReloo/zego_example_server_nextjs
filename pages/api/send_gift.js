@@ -46,6 +46,7 @@ export default async function sendGift(req, resp) {
     server_secret,
     serverTimeStamp
   );
+
   const url = `https://zim-api.zego.im/?Action=SendRoomMessage&AppId=${app_id}&Timestamp=${serverTimeStamp}&Signature=${signature}&SignatureVersion=2.0&SignatureNonce=${signatureNonce}`;
   const Message = JSON.stringify({
     room_id, // Room ID
@@ -55,6 +56,7 @@ export default async function sendGift(req, resp) {
     gift_count, // Number of gifts
     timestamp,
   });
+  
   const formData = {
     FromUserId: user_id,
     RoomId: room_id,
