@@ -10,6 +10,6 @@ This project is the server source code of ZEGOCLOUD Example, you can refer to th
 ├── lib                       ---- Project dependency library
 ├── page                      ---- Project source code
 |   ├── api                   ---- Interface implementation directory
-|       ├── send_gift.js      ---- Interface is used in [Virtual Gifts Function](https://www.zegocloud.com/blog/virtual-gifts)
+|       ├── send_gift.js      ---- Interface is used in https://www.zegocloud.com/blog/virtual-gifts
 ├── package.json              ---- Dependency library settings
 ```
